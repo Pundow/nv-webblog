@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 require('./routes')(app)
 
 app.get('/status', function (req, res ){
-    res.send('Hello nodejs server')
+    res.send('Hello ')
 })
 app.get('/hello/:person', function (req,res) {
     console.log('hello - ' + req.params.person)
